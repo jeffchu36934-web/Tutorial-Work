@@ -19,11 +19,20 @@ public class Shouter {
         return message.toUpperCase();
     }
 
+    public String toString() {
+        return message.toUpperCase();
+    }
+
     
 
     public static void main(String[] args) {
         Shouter shout = new Shouter("hi");
 
+        //These two print statements will print the exact same thing
         System.out.println(shout.toUpperCase());
+        
+        //Printing the object itself will print the return of the toString method
+        System.out.println(shout);
     }
 }    
+
